@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Календарь</title>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/func.js"></script>
+  <link rel="stylesheet" href="css/style-white.css">
+</head>
+
+<body>
+  <!--Календарь-->
+  <table class="cal"></table>
+  <div class="edit-event">
+    <div class="header-event">
+      <div class="add" title="Добавить событие">&#10010;</div>
+      <div class="save" title="Сохранить событие">&#10004;</div>
+      <div class="event-date"></div>
+      <div class="close" title="Закрыть">&#10006;</div>
+    </div>
+    <div class="clear"></div>
+    <hr>
+    <input class="name" type="text" placeholder="Название события...">
+    <textarea class="desc" placeholder="Описание..."></textarea>
+    <div class="event-list" data-len=""></div>
+  </div>
+</body>
+
+</html>

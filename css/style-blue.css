@@ -1,0 +1,127 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+.cal{
+  margin: 20px auto;
+  text-align: center;
+  width: 300px;
+  font-size: 18px;
+  background-color: rgba(204, 204, 204, 0.38);
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+td{
+  padding: 10px;
+  color: #fff;
+}
+
+td:hover{
+  color: #2a3aad;
+}
+
+.num{
+  background-color:#3399CC;
+  border: 1px solid rgba(204, 204, 204, 0.2);
+}
+
+.num:hover{
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+  background-color: #133d66;
+}
+
+.d-hide{
+  background-color: #e3e3e3;
+  color: #000;
+  border: 1px solid rgba(204, 204, 204, 0.2);
+  cursor: default;
+}
+
+.d-hide:hover{
+  color: #000;
+}
+
+.active{
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+  background-color: #184774 !important;
+}
+
+.active:hover{
+  color: #fff;
+}
+
+.tod{
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+  background-color: #2e72b5;
+}
+
+.num:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.month{
+  background-color: #1d568f;
+  cursor: default;
+}
+
+.month:hover{
+  color: #fff;
+}
+
+.arrowr, .arrowl{
+  cursor: pointer;
+  background-color: #1d568f;
+  font-size: 22px;
+  color: #fff;
+}
+
+.arrowr:hover, .arrowl:hover{
+  background-color: #ccc;
+  color: #001180;
+}
+
+.sub td{
+  background-color: #557ca3;
+  cursor: default;
+  border: 1px solid rgba(204, 204, 204, 0.2);
+}
+
+.sub td:hover{
+  color: #fff;
+}
+
+.info{
+  width: 300px;
+  height: 45px;
+  margin: 10px auto;
+  line-height: 45px;
+  background-color: #e3e3e3;
+}
+
+.full-date, .add-event{
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.full-date{
+  width: 85%;
+  font-size: 18px;
+}
+
+.add-event{
+  width: 15%;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #557ca3;
+  color: #fff;
+}
+
+.add-event:hover{
+  background-color: #222cb3;
+}

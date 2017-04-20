@@ -1,0 +1,254 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+/* Календарь */
+.cal{
+  margin: 20px auto;
+  text-align: center;
+  width: 320px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border-radius: 10px;
+}
+
+td{
+  color: #fff;
+  padding: 10px;
+}
+
+/* Ячейки с датам текущего месяца */
+.num{
+  color: #000;
+}
+
+.num:hover{
+  border-radius: 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* Ячейки с датами предыдущего и следующего месяцев */
+.d-hide{
+  color: #999797;
+  cursor: default;
+}
+
+/* Выбранная ячейка */
+.active{
+  border-radius: 5px;
+  background-color: #2e72b5 !important;
+  color: #fff;
+}
+
+/* Ячейки с сегодняшей датой */
+.tod{
+  background-color: #50a0ec;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Ячейки с событиями */
+.event{
+  background-color: #3aa229;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Ячейки с месяцем и годом*/
+.month{
+  cursor: default;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Стрелки туда, сюда */
+.arrowr, .arrowl{
+  cursor: pointer;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.arrowr:hover, .arrowl:hover{
+  background-color: #ccc;
+  color: #000;
+}
+
+.arrowr:hover{
+  border-top-left-radius: 10px;
+}
+
+.arrowl:hover{
+  border-top-right-radius: 10px;
+}
+
+/* Дни недели */
+.sub td{
+  cursor: default;
+  padding: 2px;
+  color: #000;
+}
+
+/* Дата выбранной ячейки */
+.full-date{
+  color: #000;
+  cursor: default;
+  font-size: 18px;
+}
+
+/* Кнопка для отображения окна с событиями */
+.more{
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.more:hover{
+  border-bottom-right-radius: 10px;
+  background-color: #ccc;
+}
+
+/* Окно с событиями */
+.edit-event{
+  position: absolute;
+  width: 320px;
+  top: 20px;
+  height: 380px;
+  left: calc(50% - 160px);
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 2px;
+  display: none;
+}
+
+.header-event{
+  text-align: center;
+}
+
+/* Дата выбранной ячейки */
+.event-date{
+  padding-top: 12px;
+  width: 68.5%;
+  margin: 0;
+  float: left;
+  font-size: 18px;
+}
+
+/* Кнопки сохранить, добавить */
+.save, .add{
+  width: 6%;
+  cursor: pointer;
+  float: left;
+  padding: 10px 14px;
+}
+
+.save:hover, .add:hover{
+  border-top-left-radius: 10px;
+  background-color: #ccc;
+}
+
+.add{
+  display: none;
+}
+
+/* Кнопка удалить */
+.del{
+  float: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.del:hover{
+  background-color: #ccc;
+}
+
+/* Кнопка закрыть окно с событиями */
+.close{
+  width: 8%;
+  cursor: pointer;
+  padding: 10px 14px;
+  float: left;
+  border-top-right-radius: 10px;
+}
+
+.close:hover{
+  background-color: #ccc;
+}
+
+/* Инпут с названием события */
+.name{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f4f4f4;
+  width: calc(100% - 20px);
+  outline: none;
+  font-size: 18px;
+  margin: 10px 10px;
+  padding-bottom: 2px;
+}
+
+/* Инпут с описанием события */
+.desc{
+  width: calc(100% - 25px);
+  margin-left: 10px;
+  resize: none;
+  height: 70%;
+  border: none;
+  background-color: #f4f4f4;
+  outline: none;
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+}
+
+/* Чистка */
+.clear{
+  padding-top: 2px;
+  clear: both;
+}
+
+/* Блок с событием */
+.event-block{
+  width: 93%;
+  min-height: 50px;
+  background-color: rgba(204, 204, 204, 0.42);
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #3d3c3c;
+  margin-bottom: 20px;
+}
+
+.event-block > p{
+  margin-top: 10px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+/* Блок со всеми событиями дня */
+.event-list{
+  display: none;
+}
+
+/* Подчёркивание */
+.bor{
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.hr{
+  padding: 0;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0;
+}
